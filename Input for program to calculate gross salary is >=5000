@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float basic, gross;
+    
+    printf("Enter the basic salary: ");
+    scanf("%f", &basic);
+    
+    // Calculate gross salary (you can adjust the formula as per your requirements)
+    gross = basic + (0.2 * basic) + (0.25 * basic);
+    
+    if (gross >= 5000) {
+        printf("Gross Salary is greater than or equal to 5000: %.2f\n", gross);
+    } else {
+        printf("Gross Salary is less than 5000: %.2f\n", gross);
+    }
+    
+    return 0;
+}
